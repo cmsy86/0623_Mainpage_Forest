@@ -1,0 +1,266 @@
+@charset "UTF-8";
+@import url(style_Reset.css);
+
+/* 공통영역 */
+body {
+    background-color: #ebeaef;
+}
+
+main#main, div#bbs, div#signBoard {
+    border-radius: 10px;
+}
+/* 공통영역 */
+
+/* div#wrap */
+div#wrap {
+    width: 1360px;
+    margin: 10px auto;
+}
+/* div#wrap */
+
+/* main#main */
+main#main {
+    margin-bottom: 24px;
+    background-color: #fff;
+}
+
+#main>header#header {
+    height: 90px;
+    text-align: center;
+    line-height: 90px;
+}
+
+#gnb li.mainLi {
+    -webkit-flex: 1px;
+    -moz-flex: 1px;
+    -ms-flex: 1px;
+    -o-flex: 1px;
+    flex: 1px;
+}
+
+#gnb li.mainLi {
+    border: 1px solid #aaa;
+}
+
+#gnb li.mainLi:not(:last-child) {
+    border-right: none;
+}
+
+#gnb a {
+    width: 100%;
+    height: 46px;
+    font-size: 19px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 46px;
+    /*border: 1px solid #000;*/
+    display: inline-block;
+}
+
+#gnb a.selected {
+    color: #fff;
+    background-color: #16a840;
+}
+
+#main div#slide {
+    padding: 10px 0 34px;
+    margin-top: 16px;
+}
+
+#main div.arrowArea {
+    line-height: 265px;
+    padding: 10px;
+    margin: 0 10px;
+}
+
+#main div#shuttleFrame {
+    -webkit-flex: 1px;
+    -moz-flex: 1px;
+    -ms-flex: 1px;
+    -o-flex: 1px;
+    flex: 1px;
+
+    justify-content: space-between;
+}
+
+#main #shuttleFrame div.slideItem {
+    border: 1px solid #aaa;
+}
+
+#main #shuttleFrame div.forestInfo {
+    padding: 16px;
+}
+
+#main .forestInfo h3 {
+    color: #22834d;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#main .forestInfo address {
+    font-size: 13px;
+    font-weight: bold;
+    font-style: normal;
+    margin-bottom: 30px;
+}
+
+#main .forestInfo hr {
+    border: none;
+    border-top: 1px solid #eee;
+    margin-bottom: 6px;
+}
+
+#main .forestInfo ul {
+    list-style-position: inside;
+}
+
+#main .forestInfo li {
+    font-size: 13px;
+    font-weight: bold;
+}
+/* main#main */
+
+/* div#contents */
+div#bbs, div#signBoard {
+    background-color: #fff;
+}
+
+#contents #bbs {
+    padding: 10px 20px 0;
+    margin-right: 20px;
+
+    -webkit-flex: 1px;
+    -moz-flex: 1px;
+    -ms-flex: 1px;
+    -o-flex: 1px;
+    flex: 1px;
+}
+
+#contents div#tabBtnArea {
+    border-bottom: 2px solid #aaa;
+    justify-content: space-between;
+}
+
+div#bbsMore {
+    line-height: 70px;
+    /*border: 1px solid #000;*/
+    margin-right: 10px;
+}
+
+#contents #bbs button {
+    color: #555;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 20px 0;
+    border: none;
+    background-color: #fff;
+}
+
+#contents #tabBtnArea button:last-child {
+    margin-left: 6px;
+}
+
+#contents #bbs .checkOn {
+    color:#f00;
+    font-size: 24px;
+    border-bottom: 4px solid #f00;
+    margin-right: 8px;
+}
+
+#contents #bbs .checkOn>i {
+    color: #f00;
+}
+
+#contents #bbs button i,
+#contents #bbs button img {
+    margin-right: 10px;
+}
+
+#contents #bbs button img {
+    transform: translateY(-3px);
+}
+
+#contents div#tabContents {
+    margin: 20px 0 0;
+
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#contents #bbs table {
+    width: 416px;
+    /*border: 1px solid #000;  */
+    margin-bottom: 20px;
+}
+#contents #bbs table td.date {
+    padding-right: 10px;
+}
+#contents #bbs table td.date div {
+    width: 84px;
+    height: 84px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 12px;
+
+    border-radius: 42px;
+
+
+
+    background-color: #eee;
+}
+#contents #bbs table td.date div span:first-child {
+    color: #f00;
+    font-size: 28px;
+    margin-bottom: 6px;
+}
+#contents #bbs table td.date div span:last-child {
+    font-size: 14px;
+    font-weight: bold;
+}
+#contents #bbs table tr:last-child td {
+    color: #555;
+    font-size: 14px;
+    line-height: 24px;
+}
+#contents #bbs table h3 {
+    color: #333;
+    margin: 6px 0;
+}
+
+#contents #signBoard {
+    width: 450px;
+    padding: 34px;
+    /*border: 1px solid #08f;*/
+}
+
+#contents #signBoard #signBoardHeader {
+    /*border: 1px solid #000;*/
+    margin-bottom: 20px;
+}
+
+#contents #signBoard h2 {
+    color: #000;
+
+    -webkit-flex: 1px;
+    -moz-flex: 1px;
+    -ms-flex: 1px;
+    -o-flex: 1px;
+    flex: 1px;
+}
+
+#contents #signBoard div#controlArea {
+    width: 100px;
+    /*border: 1px solid #000;*/
+}
+
+#contents #controlArea span {
+    text-align: center;
+    /*border: 1px solid #f80;*/
+
+    -webkit-flex: 1px;
+    -moz-flex: 1px;
+    -ms-flex: 1px;
+    -o-flex: 1px;
+    flex: 1px;
+}
+/* div#contents */
